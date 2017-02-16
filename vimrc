@@ -7,7 +7,7 @@ noremap <F3> :set invrelativenumber<CR>
 inoremap <F3> <C-O>:set invrelativenumber<CR>
 
 "Colour scheme for numbeline
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+highlight LineNr term=bold cterm=NONE ctermfg=LightBlue ctermbg=DarkGrey gui=NONE guifg=DarkBlue guibg=LightGrey
 
 syntax enable
 
@@ -26,3 +26,7 @@ set showmatch
 nnoremap j gj
 nnoremap k gk
 inoremap jk <esc>
+
+"Sets the absolute position of the column and its colour scheme
+set colorcolumn=100
+highlight ColorColumn ctermbg=DarkBlue guibg=DarkBlue
