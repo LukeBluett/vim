@@ -1,3 +1,4 @@
+execute pathogen#infect()
 
 set number
 set numberwidth=5
@@ -30,3 +31,13 @@ inoremap jk <esc>
 "Sets the absolute position of the column and its colour scheme
 set colorcolumn=100
 highlight ColorColumn ctermbg=DarkBlue guibg=DarkBlue
+
+set background=dark
+colorscheme PaperColor
+
+noremap <F4> :NERDTreeToggle<CR>
+inoremap <F4> <C-O>:NERDTreeToggle<CR>
+
+noremap <F5> :NERDTreeMirror<CR>
+inoremap <F5> <C-O>:NERDTreeMirror<CR>
+
